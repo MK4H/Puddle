@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/java_def/src-gen" creationIcons="false" editDirectory="/java_def.edit/src-gen"
+    editorDirectory="/java_def.editor/src-gen" modelPluginID="java_def" modelName="Java_def"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>java_def.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Java_def" disposableProviderFactory="true" ecorePackage="java_def.ecore#/">
+    <genClasses ecoreClass="java_def.ecore#//Class">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute java_def.ecore#//Class/visibility"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference java_def.ecore#//Class/implements"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference java_def.ecore#//Class/has"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference java_def.ecore#//Class/implements.1"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference java_def.ecore#//Class/defines"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute java_def.ecore#//Class/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference java_def.ecore#//Class/has.1"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference java_def.ecore#//Class/has.2"/>
+    </genClasses>
+    <genClasses ecoreClass="java_def.ecore#//Interface">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute java_def.ecore#//Interface/visibility"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference java_def.ecore#//Interface/implements"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference java_def.ecore#//Interface/defines"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute java_def.ecore#//Interface/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference java_def.ecore#//Interface/extends"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference java_def.ecore#//Interface/has"/>
+    </genClasses>
+    <genClasses ecoreClass="java_def.ecore#//Member">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute java_def.ecore#//Member/visibility"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute java_def.ecore#//Member/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute java_def.ecore#//Member/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute java_def.ecore#//Member/isVolatile"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute java_def.ecore#//Member/isTransient"/>
+    </genClasses>
+    <genClasses ecoreClass="java_def.ecore#//Method">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute java_def.ecore#//Method/visibility"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference java_def.ecore#//Method/overrides"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference java_def.ecore#//Method/implements"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference java_def.ecore#//Method/overrides.1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute java_def.ecore#//Method/parameters"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference java_def.ecore#//Method/has"/>
+    </genClasses>
+    <genClasses ecoreClass="java_def.ecore#//Abstract%20method"/>
+    <genClasses ecoreClass="java_def.ecore#//Abstract%20class">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference java_def.ecore#//Abstract%20class/defines"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference java_def.ecore#//Abstract%20class/extends"/>
+    </genClasses>
+    <genClasses ecoreClass="java_def.ecore#//Default%20method"/>
+    <genClasses ecoreClass="java_def.ecore#//Required%20method"/>
+    <genClasses ecoreClass="java_def.ecore#//Constructor">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference java_def.ecore#//Constructor/constructs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute java_def.ecore#//Constructor/visibility"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute java_def.ecore#//Constructor/parameters"/>
+    </genClasses>
+    <genClasses ecoreClass="java_def.ecore#//Normal%20class">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference java_def.ecore#//Normal%20class/extends"/>
+    </genClasses>
+    <genClasses ecoreClass="java_def.ecore#//Final%20Class"/>
+    <genClasses ecoreClass="java_def.ecore#//Extendable%20class"/>
+    <genClasses ecoreClass="java_def.ecore#//Type%20parameter"/>
+    <genClasses ecoreClass="java_def.ecore#//Outer%20class">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference java_def.ecore#//Outer%20class/has"/>
+    </genClasses>
+    <genClasses ecoreClass="java_def.ecore#//Inner%20class"/>
+    <genClasses ecoreClass="java_def.ecore#//Static%20final%20member">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute java_def.ecore#//Static%20final%20member/visibility"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute java_def.ecore#//Static%20final%20member/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute java_def.ecore#//Static%20final%20member/type"/>
+    </genClasses>
+    <genClasses ecoreClass="java_def.ecore#//Static%20member">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute java_def.ecore#//Static%20member/visibility"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute java_def.ecore#//Static%20member/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute java_def.ecore#//Static%20member/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute java_def.ecore#//Static%20member/isTransient"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute java_def.ecore#//Static%20member/isVolatile"/>
+    </genClasses>
+    <genClasses ecoreClass="java_def.ecore#//Final%20Class.1"/>
+    <genClasses ecoreClass="java_def.ecore#//Normal%20class.1">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference java_def.ecore#//Normal%20class.1/extends"/>
+    </genClasses>
+    <genClasses ecoreClass="java_def.ecore#//Extendable%20class.1"/>
+    <genClasses ecoreClass="java_def.ecore#//Abstract%20class.1">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference java_def.ecore#//Abstract%20class.1/extends"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference java_def.ecore#//Abstract%20class.1/defines"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

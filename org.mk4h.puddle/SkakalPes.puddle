@@ -1,0 +1,26 @@
+
+
+song "SkakalPes" {
+	key c major
+	time 4/4
+	octave +1
+	default duration 4
+	
+	g "Ská" g "kal" e 2 "pes"
+	g "přes" g "o" e 2 "ves"
+	g "přes" g "ze" a "le" g "nou"
+	g 2 "lou" f 2 "ku"
+	f "šel" f "za" d 2 "ním"
+	f "mys" f "li" d 2 "vec"
+	g "pé" g "ro" a "na" g "klo"
+	g 2 "bou" f 2 "ku"
+	
+	g "Pej" g "sku" e 2 "náš"
+	g "co" g "dě" e 2 "láš"
+	g "žes" g "tak" a "ve" g "sel"
+	g 2 "stá" f 2 "le"
+	f "Řek" f "bych" d 2 "vám"
+	f "ne" f "vím" d 2 "sám"
+	g "hop" g "a" a "ská" g "kal"
+	g 2 "dá" f 2 "le"
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="java_def" nsURI="http://www.example.org/java_def" nsPrefix="java_def">
+  <eClassifiers xsi:type="ecore:EClass" name="Class">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="visibility"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="implements" upperBound="-1"
+        eType="#//Interface"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="has" upperBound="-1" eType="#//Member"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="implements" upperBound="-1"
+        eType="#//Method"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="defines" upperBound="-1"
+        eType="#//Constructor" eOpposite="#//Constructor/constructs"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="has" upperBound="-1" eType="#//Type%20parameter"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="has" upperBound="-1" eType="#//Static%20final%20member"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Interface">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="visibility"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="implements" upperBound="-1"
+        eType="#//Default%20method"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="defines" upperBound="-1"
+        eType="#//Required%20method"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="extends" upperBound="-1"
+        eType="#//Interface"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="has" upperBound="-1" eType="#//Type%20parameter"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Member">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="visibility"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isVolatile"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isTransient"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Method">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="visibility"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="overrides" eType="#//Method"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="implements" eType="#//Required%20method"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="overrides" eType="#//Default%20method"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="parameters"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="has" upperBound="-1" eType="#//Type%20parameter"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Abstract method" eSuperTypes="#//Method"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Abstract class" eSuperTypes="#//Extendable%20class">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="defines" upperBound="-1"
+        eType="#//Abstract%20method"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="extends" eType="#//Extendable%20class"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Default method"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Required method"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Constructor">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="constructs" lowerBound="1"
+        eType="#//Class" eOpposite="#//Class/defines"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="visibility"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="parameters"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Normal class" eSuperTypes="#//Extendable%20class">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="extends" eType="#//Extendable%20class"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Final Class" eSuperTypes="#//Outer%20class"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Extendable class" eSuperTypes="#//Outer%20class"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Type parameter"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Outer class" eSuperTypes="#//Class">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="has" upperBound="-1" eType="#//Static%20member"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Inner class" eSuperTypes="#//Class"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Static final member">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="visibility"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Static member">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="visibility"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isTransient"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isVolatile"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Final Class" eSuperTypes="#//Inner%20class"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Normal class" eSuperTypes="#//Extendable%20class.1">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="extends" eType="#//Extendable%20class.1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Extendable class" eSuperTypes="#//Inner%20class"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Abstract class" eSuperTypes="#//Extendable%20class.1">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="extends" eType="#//Extendable%20class.1"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="defines" upperBound="-1"
+        eType="#//Abstract%20method"/>
+  </eClassifiers>
+</ecore:EPackage>
