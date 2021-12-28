@@ -50,4 +50,4 @@ PhraseReference returns PhraseReference hidden():
 
 terminal SIGNED_INT returns ecore::EInt: ('+'|'-')('0'..'9')+;
 
-terminal PITCH: 'c'|'d'|'e'|'f'|'g'|'a'|'h'|'b';
+terminal PITCH: 'c'|'d'|'e'|'f'|'g'|'a'|'b';
